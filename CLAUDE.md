@@ -36,6 +36,42 @@ README for why.
   deeper (`button/primary/color/background/default`), so a `^color/` test
   mistypes every component colour token.
 
+## Changing a token
+
+The README covers extraction. Writing a change *back* to Figma is the other
+half, and the order matters.
+
+**1. Check the blast radius first.** A Tier 2 token is shared by definition, so
+find out what depends on it before touching it. Read-only, via `use_figma`:
+
+```js
+const all = await figma.variables.getLocalVariablesAsync();
+const target = all.find(v => v.name === "radius/surface");
+// Tier 3 tokens aliasing it
+const aliases = all.filter(v => Object.values(v.valuesByMode).some(
+  val => val && val.type === "VARIABLE_ALIAS" && val.id === target.id));
+// plus a walk of figma.currentPage looking for boundVariables hits
+```
+
+**2. Change it in Figma, not in code.** `setValueForMode` with a
+`VARIABLE_ALIAS`, then **read it back in the same script** rather than trusting
+the write:
+
+```js
+surface.setValueForMode(modeId, { type: "VARIABLE_ALIAS", id: target.id });
+const after = (await figma.variables.getVariableByIdAsync(surface.id)).valuesByMode[modeId];
+```
+
+**3. Re-extract, build, verify, then read the diff.** This is what the committed
+`scripts/figma-dump.json` is *for* — a design change should arrive as a small,
+reviewable diff. Rebinding `radius/surface` from 12px to 8px was two lines
+across two files. Anything larger than you expected means something else moved.
+
+**A rebinding must not change the variable count.** Pointing a Tier 2 token at a
+different Tier 1 primitive adds nothing, so `npm run verify` should still report
+279. If the count moves, a variable was created rather than re-aimed — which is
+exactly the thing rule 1 says to ask about first.
+
 ## Commands
 
 ```sh
