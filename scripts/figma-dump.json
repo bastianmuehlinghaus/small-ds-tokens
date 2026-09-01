@@ -345,7 +345,7 @@
     "border/width/focus": "{border/width/2}",
     "radius/none": "{border/radius/0}",
     "radius/control": "{border/radius/4}",
-    "radius/surface": "{border/radius/12}",
+    "radius/surface": "{border/radius/8}",
     "radius/surface-lg": "{border/radius/24}",
     "radius/pill": "{border/radius/full}",
     "size/control/sm": "{size/control/32}",
