@@ -1,0 +1,42 @@
+{
+  "name": "@small-ds/tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for Small DS, generated from Figma. Four tiers, two modes, no literal values below the primitive layer.",
+  "license": "MIT",
+  "author": "Bastian Mühlinghaus",
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "dist",
+    "tokens"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/js/tokens.d.ts",
+      "default": "./dist/js/tokens.js"
+    },
+    "./css": "./dist/css/tokens.css",
+    "./typography.css": "./dist/css/typography.css",
+    "./json": "./dist/json/tokens.json",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "transform": "node scripts/transform.mjs",
+    "build": "npm run transform && node config/style-dictionary.mjs",
+    "verify": "node scripts/verify.mjs",
+    "prepublishOnly": "npm run build && npm run verify"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastianmuehlinghaus/small-ds-tokens.git"
+  },
+  "keywords": ["design-tokens", "design-system", "figma", "css-variables"]
+}

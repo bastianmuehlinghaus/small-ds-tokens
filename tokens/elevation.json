@@ -1,0 +1,46 @@
+{
+  "shadow": {
+    "none": {
+      "$type": "shadow",
+      "$value": []
+    },
+    "raised": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "offsetX": 0,
+          "offsetY": 1,
+          "blur": 3,
+          "spread": 0,
+          "color": "{color.shadow.default}"
+        },
+        {
+          "offsetX": 0,
+          "offsetY": 1,
+          "blur": 2,
+          "spread": 0,
+          "color": "{color.shadow.subtle}"
+        }
+      ]
+    },
+    "overlay": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "offsetX": 0,
+          "offsetY": 4,
+          "blur": 12,
+          "spread": 0,
+          "color": "{color.shadow.default}"
+        },
+        {
+          "offsetX": 0,
+          "offsetY": 2,
+          "blur": 4,
+          "spread": 0,
+          "color": "{color.shadow.subtle}"
+        }
+      ]
+    }
+  }
+}

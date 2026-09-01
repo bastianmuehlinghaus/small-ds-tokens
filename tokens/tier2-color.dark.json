@@ -1,0 +1,184 @@
+{
+  "color": {
+    "background": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.neutral.900}"
+      },
+      "raised": {
+        "$type": "color",
+        "$value": "{color.neutral.800}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.neutral.800}"
+      },
+      "sunken": {
+        "$type": "color",
+        "$value": "{color.neutral.black}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.neutral.900}"
+      },
+      "knockout": {
+        "$type": "color",
+        "$value": "{color.neutral.100}"
+      },
+      "overlay": {
+        "$type": "color",
+        "$value": "{color.alpha.black.72}"
+      },
+      "utility-error": {
+        "$type": "color",
+        "$value": "{color.utility.red.900}"
+      },
+      "utility-info": {
+        "$type": "color",
+        "$value": "{color.utility.blue.900}"
+      },
+      "utility-success": {
+        "$type": "color",
+        "$value": "{color.utility.green.900}"
+      },
+      "utility-warning": {
+        "$type": "color",
+        "$value": "{color.utility.yellow.900}"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.neutral.700}"
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{color.neutral.500}"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{color.neutral.600}"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{color.utility.blue.400}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.neutral.800}"
+      },
+      "knockout": {
+        "$type": "color",
+        "$value": "{color.neutral.100}"
+      },
+      "knockout-subtle": {
+        "$type": "color",
+        "$value": "{color.neutral.400}"
+      },
+      "utility-error": {
+        "$type": "color",
+        "$value": "{color.utility.red.300}"
+      },
+      "utility-info": {
+        "$type": "color",
+        "$value": "{color.utility.blue.300}"
+      },
+      "utility-success": {
+        "$type": "color",
+        "$value": "{color.utility.green.300}"
+      },
+      "utility-warning": {
+        "$type": "color",
+        "$value": "{color.utility.yellow.300}"
+      }
+    },
+    "content": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.neutral.100}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.neutral.500}"
+      },
+      "placeholder": {
+        "$type": "color",
+        "$value": "{color.neutral.500}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.neutral.600}"
+      },
+      "knockout": {
+        "$type": "color",
+        "$value": "{color.neutral.900}"
+      },
+      "knockout-subtle": {
+        "$type": "color",
+        "$value": "{color.neutral.600}"
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{color.neutral.100}"
+      },
+      "link-hover": {
+        "$type": "color",
+        "$value": "{color.neutral.300}"
+      },
+      "link-visited": {
+        "$type": "color",
+        "$value": "{color.neutral.500}"
+      },
+      "utility-error": {
+        "$type": "color",
+        "$value": "{color.utility.red.300}"
+      },
+      "utility-info": {
+        "$type": "color",
+        "$value": "{color.utility.blue.300}"
+      },
+      "utility-success": {
+        "$type": "color",
+        "$value": "{color.utility.green.300}"
+      },
+      "utility-warning": {
+        "$type": "color",
+        "$value": "{color.utility.yellow.300}"
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.alpha.black.40}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{color.alpha.black.32}"
+      }
+    },
+    "state": {
+      "hover": {
+        "$type": "color",
+        "$value": "{color.alpha.white.8}"
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{color.alpha.white.12}"
+      },
+      "selected": {
+        "$type": "color",
+        "$value": "{color.alpha.white.12}"
+      },
+      "knockout": {
+        "hover": {
+          "$type": "color",
+          "$value": "{color.alpha.black.8}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{color.alpha.black.12}"
+        }
+      }
+    }
+  }
+}
