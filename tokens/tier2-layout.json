@@ -26,7 +26,7 @@
     },
     "surface": {
       "$type": "dimension",
-      "$value": "{border.radius.12}"
+      "$value": "{border.radius.8}"
     },
     "surface-lg": {
       "$type": "dimension",
