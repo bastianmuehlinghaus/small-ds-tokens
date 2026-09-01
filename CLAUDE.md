@@ -2,6 +2,13 @@
 
 Design tokens generated from Figma. Published as `@small-ds/tokens`.
 
+**Figma:** [Small DS: Design Tokens](https://www.figma.com/design/DABmspHvLwmzYjMrFBjVQW/Small-DS--Design-Tokens)
+(`DABmspHvLwmzYjMrFBjVQW`) — the source of truth. Consumed by
+[Small DS: Components](https://www.figma.com/design/VBd0r5d1gcGPQSKrR8LzCp/Small-DS--Components)
+(`VBd0r5d1gcGPQSKrR8LzCp`), where the three coded components exist as Figma
+component sets. A token change here shows up there through the published
+library, the same way it reaches the components repo through npm.
+
 ## Rules
 
 **1. Never invent a token.** If something looks missing, *ask Bastian first* —
@@ -66,6 +73,12 @@ const after = (await figma.variables.getVariableByIdAsync(surface.id)).valuesByM
 `scripts/figma-dump.json` is *for* — a design change should arrive as a small,
 reviewable diff. Rebinding `radius/surface` from 12px to 8px was two lines
 across two files. Anything larger than you expected means something else moved.
+
+**Changing a variable affects the components file too.** Tier 2 and Tier 3 are
+published; Tier 1 is not, which is what stops a Figma component binding to a
+primitive. After a token change, check
+[Small DS: Components](https://www.figma.com/design/VBd0r5d1gcGPQSKrR8LzCp/Small-DS--Components)
+as well as Storybook.
 
 **A rebinding must not change the variable count.** Pointing a Tier 2 token at a
 different Tier 1 primitive adds nothing, so `npm run verify` should still report
