@@ -382,7 +382,7 @@
     "button/size/height/sm": "{size/control/sm}",
     "button/size/height/md": "{size/control/md}",
     "button/size/height/lg": "{size/control/lg}",
-    "button/space/gap": "{space/inline/sm}",
+    "button/space/gap": "{space/inline/xs}",
     "button/space/inset-x/sm": "{space/inset/md}",
     "button/space/inset-x/md": "{space/inset/lg}",
     "button/space/inset-x/lg": "{space/inset/xl}",

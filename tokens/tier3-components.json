@@ -33,7 +33,7 @@
     "space": {
       "gap": {
         "$type": "dimension",
-        "$value": "{space.inline.sm}"
+        "$value": "{space.inline.xs}"
       },
       "inset-x": {
         "sm": {
