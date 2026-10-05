@@ -28,12 +28,36 @@
           "$type": "dimension",
           "$value": "{size.control.lg}"
         }
+      },
+      "icon": {
+        "sm": {
+          "$type": "dimension",
+          "$value": "{size.icon.sm}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{size.icon.md}"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{size.icon.lg}"
+        }
       }
     },
     "space": {
       "gap": {
-        "$type": "dimension",
-        "$value": "{space.inline.xs}"
+        "sm": {
+          "$type": "dimension",
+          "$value": "{space.inline.xs}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{space.inline.sm}"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{space.inline.sm}"
+        }
       },
       "inset-x": {
         "sm": {
@@ -47,6 +71,20 @@
         "lg": {
           "$type": "dimension",
           "$value": "{space.inset.xl}"
+        }
+      },
+      "inset-x-icon": {
+        "sm": {
+          "$type": "dimension",
+          "$value": "{space.inset.sm}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{space.inset.md}"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{space.inset.lg}"
         }
       }
     },

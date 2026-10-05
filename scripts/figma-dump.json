@@ -2,8 +2,8 @@
   "_meta": {
     "fileKey": "DABmspHvLwmzYjMrFBjVQW",
     "fileName": "Small DS: Design Tokens",
-    "extractedAt": "2026-09-01",
-    "totalVariables": 279,
+    "extractedAt": "2026-10-05",
+    "totalVariables": 287,
     "collections": {
       "Tier 1 / Primitives": {
         "count": 135,
@@ -25,7 +25,7 @@
         ]
       },
       "Tier 3 / Components": {
-        "count": 67,
+        "count": 75,
         "modes": [
           "Value"
         ]
@@ -382,10 +382,18 @@
     "button/size/height/sm": "{size/control/sm}",
     "button/size/height/md": "{size/control/md}",
     "button/size/height/lg": "{size/control/lg}",
-    "button/space/gap": "{space/inline/xs}",
+    "button/size/icon/sm": "{size/icon/sm}",
+    "button/size/icon/md": "{size/icon/md}",
+    "button/size/icon/lg": "{size/icon/lg}",
+    "button/space/gap/sm": "{space/inline/xs}",
+    "button/space/gap/md": "{space/inline/sm}",
+    "button/space/gap/lg": "{space/inline/sm}",
     "button/space/inset-x/sm": "{space/inset/md}",
     "button/space/inset-x/md": "{space/inset/lg}",
     "button/space/inset-x/lg": "{space/inset/xl}",
+    "button/space/inset-x-icon/sm": "{space/inset/sm}",
+    "button/space/inset-x-icon/md": "{space/inset/md}",
+    "button/space/inset-x-icon/lg": "{space/inset/lg}",
     "button/default/color/background/default": "{color/background/subtle}",
     "button/default/color/background/disabled": "{color/background/disabled}",
     "button/default/color/content/default": "{color/content/default}",

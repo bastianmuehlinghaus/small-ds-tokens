@@ -82,7 +82,7 @@ as well as Storybook.
 
 **A rebinding must not change the variable count.** Pointing a Tier 2 token at a
 different Tier 1 primitive adds nothing, so `npm run verify` should still report
-279. If the count moves, a variable was created rather than re-aimed — which is
+287. If the count moves, a variable was created rather than re-aimed — which is
 exactly the thing rule 1 says to ask about first.
 
 ## Commands
