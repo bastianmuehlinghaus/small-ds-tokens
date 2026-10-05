@@ -39,7 +39,7 @@
     "space": {
       "label-inset-x": {
         "$type": "dimension",
-        "$value": "{space.inset.sm}"
+        "$value": "{space.inset.xs}"
       },
       "inset-x": {
         "$type": "dimension",

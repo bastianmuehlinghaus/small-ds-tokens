@@ -383,7 +383,7 @@
     "button/size/height/md": "{size/control/md}",
     "button/size/icon/sm": "{size/icon/sm}",
     "button/size/icon/md": "{size/icon/md}",
-    "button/space/label-inset-x": "{space/inset/sm}",
+    "button/space/label-inset-x": "{space/inset/xs}",
     "button/space/inset-x": "{space/inset/sm}",
     "button/default/color/background/default": "{color/background/subtle}",
     "button/default/color/background/disabled": "{color/background/disabled}",
