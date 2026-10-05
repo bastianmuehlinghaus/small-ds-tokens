@@ -3,7 +3,7 @@
     "fileKey": "DABmspHvLwmzYjMrFBjVQW",
     "fileName": "Small DS: Design Tokens",
     "extractedAt": "2026-10-05",
-    "totalVariables": 278,
+    "totalVariables": 279,
     "collections": {
       "Tier 1 / Primitives": {
         "count": 135,
@@ -25,7 +25,7 @@
         ]
       },
       "Tier 3 / Components": {
-        "count": 66,
+        "count": 67,
         "modes": [
           "Value"
         ]
@@ -384,7 +384,8 @@
     "button/size/icon/sm": "{size/icon/sm}",
     "button/size/icon/md": "{size/icon/md}",
     "button/space/label-inset-x": "{space/inset/xs}",
-    "button/space/inset-x": "{space/inset/sm}",
+    "button/space/inset-x/sm": "{space/inset/sm}",
+    "button/space/inset-x/md": "{space/inset/md}",
     "button/default/color/background/default": "{color/background/subtle}",
     "button/default/color/background/disabled": "{color/background/disabled}",
     "button/default/color/content/default": "{color/content/default}",

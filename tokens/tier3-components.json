@@ -42,8 +42,14 @@
         "$value": "{space.inset.xs}"
       },
       "inset-x": {
-        "$type": "dimension",
-        "$value": "{space.inset.sm}"
+        "sm": {
+          "$type": "dimension",
+          "$value": "{space.inset.sm}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{space.inset.md}"
+        }
       }
     },
     "default": {
