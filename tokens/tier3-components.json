@@ -37,35 +37,13 @@
       }
     },
     "space": {
-      "gap": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "{space.inline.xs}"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "{space.inline.sm}"
-        }
+      "label-inset-x": {
+        "$type": "dimension",
+        "$value": "{space.inset.sm}"
       },
       "inset-x": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "{space.inset.md}"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "{space.inset.lg}"
-        }
-      },
-      "inset-x-icon": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "{space.inset.sm}"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "{space.inset.md}"
-        }
+        "$type": "dimension",
+        "$value": "{space.inset.sm}"
       }
     },
     "default": {
