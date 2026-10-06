@@ -228,7 +228,7 @@
       "Dark": "{color/neutral/600}"
     },
     "color/border/focus": {
-      "Light": "{color/utility/blue/700}",
+      "Light": "{color/utility/blue/600}",
       "Dark": "{color/utility/blue/400}"
     },
     "color/border/disabled": {
