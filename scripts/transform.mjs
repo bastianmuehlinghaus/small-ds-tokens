@@ -40,12 +40,37 @@ function put(tree, slashPath, leaf) {
   node[parts.at(-1)] = leaf;
 }
 
+/** Follow a Tier 1 alias chain to its literal: "{color/neutral/black}" -> "#000000". */
+function literal(v) {
+  while (typeof v === "string" && v.startsWith("{")) v = dump.tier1[v.slice(1, -1)];
+  return v;
+}
+
+/**
+ * A Figma composed colour — a colour plus an opacity percentage, either of which
+ * may be an alias. DTCG has no "alias with alpha", so $value carries the
+ * resolved colour (what JS and JSON consumers get) and the composition rides
+ * along in $extensions, where the CSS build turns it back into a reference.
+ */
+const isComposed = (v) => v && typeof v === "object" && "color" in v && "opacity" in v;
+function composed(v) {
+  const base = literal(v.color).slice(0, 7);
+  const pct = literal(v.opacity);
+  const alpha = Math.round((pct / 100) * 255).toString(16).padStart(2, "0");
+  return {
+    $value: base + alpha,
+    $extensions: { "com.small-ds": { composed: { color: deref(v.color), opacity: deref(v.opacity) } } },
+  };
+}
+
 /** Flat map -> nested DTCG tree. `pick` chooses a mode from multi-mode values. */
 function toDTCG(flat, pick) {
   const tree = {};
   for (const [name, raw] of Object.entries(flat)) {
     const value = pick ? raw[pick] : raw;
-    put(tree, name, { $type: typeOf(name), $value: deref(value) });
+    put(tree, name, isComposed(value)
+      ? { $type: typeOf(name), ...composed(value) }
+      : { $type: typeOf(name), $value: deref(value) });
   }
   return tree;
 }

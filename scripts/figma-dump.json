@@ -45,14 +45,38 @@
     "border/width/0": 0,
     "border/width/1": 1,
     "border/width/2": 2,
-    "color/alpha/black/8": "#00000014",
-    "color/alpha/black/12": "#0000001f",
-    "color/alpha/black/32": "#00000052",
-    "color/alpha/black/40": "#00000066",
-    "color/alpha/black/60": "#00000099",
-    "color/alpha/black/72": "#000000b8",
-    "color/alpha/white/8": "#ffffff14",
-    "color/alpha/white/12": "#ffffff1f",
+    "color/alpha/black/8": {
+      "color": "{color/neutral/black}",
+      "opacity": 8
+    },
+    "color/alpha/black/12": {
+      "color": "{color/neutral/black}",
+      "opacity": 12
+    },
+    "color/alpha/black/32": {
+      "color": "{color/neutral/black}",
+      "opacity": 32
+    },
+    "color/alpha/black/40": {
+      "color": "{color/neutral/black}",
+      "opacity": 40
+    },
+    "color/alpha/black/60": {
+      "color": "{color/neutral/black}",
+      "opacity": 60
+    },
+    "color/alpha/black/72": {
+      "color": "{color/neutral/black}",
+      "opacity": 72
+    },
+    "color/alpha/white/8": {
+      "color": "{color/neutral/white}",
+      "opacity": 8
+    },
+    "color/alpha/white/12": {
+      "color": "{color/neutral/white}",
+      "opacity": 12
+    },
     "color/neutral/100": "#fdfdfd",
     "color/neutral/200": "#f5f5f5",
     "color/neutral/300": "#e8e8e8",

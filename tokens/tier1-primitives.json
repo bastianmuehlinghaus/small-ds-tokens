@@ -58,37 +58,101 @@
       "black": {
         "8": {
           "$type": "color",
-          "$value": "#00000014"
+          "$value": "#00000014",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.neutral.black}",
+                "opacity": 8
+              }
+            }
+          }
         },
         "12": {
           "$type": "color",
-          "$value": "#0000001f"
+          "$value": "#0000001f",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.neutral.black}",
+                "opacity": 12
+              }
+            }
+          }
         },
         "32": {
           "$type": "color",
-          "$value": "#00000052"
+          "$value": "#00000052",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.neutral.black}",
+                "opacity": 32
+              }
+            }
+          }
         },
         "40": {
           "$type": "color",
-          "$value": "#00000066"
+          "$value": "#00000066",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.neutral.black}",
+                "opacity": 40
+              }
+            }
+          }
         },
         "60": {
           "$type": "color",
-          "$value": "#00000099"
+          "$value": "#00000099",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.neutral.black}",
+                "opacity": 60
+              }
+            }
+          }
         },
         "72": {
           "$type": "color",
-          "$value": "#000000b8"
+          "$value": "#000000b8",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.neutral.black}",
+                "opacity": 72
+              }
+            }
+          }
         }
       },
       "white": {
         "8": {
           "$type": "color",
-          "$value": "#ffffff14"
+          "$value": "#ffffff14",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.neutral.white}",
+                "opacity": 8
+              }
+            }
+          }
         },
         "12": {
           "$type": "color",
-          "$value": "#ffffff1f"
+          "$value": "#ffffff1f",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.neutral.white}",
+                "opacity": 12
+              }
+            }
+          }
         }
       }
     },

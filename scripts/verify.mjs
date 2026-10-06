@@ -36,6 +36,15 @@ const literals = semanticPaths.filter((p) => {
 });
 check(`all ${semanticPaths.length} Tier 2/3 tokens are var() references`, literals.length === 0, literals.slice(0, 5).join(", "));
 
+/* 2b. Composed colours (Figma colour + opacity) stay compositions in CSS. If
+       one flattens to a literal, the "black at 8%" relationship is lost. */
+const composedPaths = Object.entries(dump.tier1).filter(([, v]) => v && typeof v === "object" && "color" in v);
+const flattened = composedPaths.filter(([p, v]) => {
+  const m = css.match(new RegExp(`^\\s*${varName(p)}:\\s*([^;]+);`, "m"));
+  return !m || !m[1].includes(`color-mix(`) || !m[1].includes(`var(${varName(v.color.slice(1, -1))})`);
+}).map(([p]) => p);
+check(`all ${composedPaths.length} composed colours reference their base`, composedPaths.length > 0 && flattened.length === 0, flattened.slice(0, 5).join(", "));
+
 /* 3. Dark mode covers the whole Tier 2 colour layer, and nothing else. */
 const darkBlock = css.slice(css.indexOf(':root[data-theme="dark"]'), css.indexOf("@media"));
 const darkVars = new Set([...darkBlock.matchAll(/(--sds-[\w-]+):/g)].map((m) => m[1]));

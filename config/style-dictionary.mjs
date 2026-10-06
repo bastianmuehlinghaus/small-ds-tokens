@@ -55,6 +55,20 @@ StyleDictionary.registerTransform({
   transform: (t) => `${t.$value}ms`,
 });
 
+/* Composed colours (Figma alias + opacity) keep their relationship in CSS: the
+   colour stays a reference, so "black at 8%" follows black if it ever moves.
+   CSS only — JS and JSON keep the resolved $value. */
+StyleDictionary.registerTransform({
+  name: "sds/color/composed",
+  type: "value",
+  filter: (t) => Boolean(t.$extensions?.["com.small-ds"]?.composed),
+  transform: (t) => {
+    const { color, opacity } = t.$extensions["com.small-ds"].composed;
+    const pct = typeof opacity === "string" ? `calc(${ref(opacity)} * 1%)` : `${opacity}%`;
+    return `color-mix(in srgb, ${ref(color)} ${pct}, transparent)`;
+  },
+});
+
 // fontWeight, number and cubicBezier deliberately have no transform: they stay
 // unitless (400/600), raw (0.3) and verbatim ("cubic-bezier(0, 0, 0.2, 1)").
 
@@ -102,7 +116,7 @@ const sd = new StyleDictionary({
   ],
   platforms: {
     css: {
-      transforms: TRANSFORMS,
+      transforms: [...TRANSFORMS, "sds/color/composed"],
       prefix: PREFIX,
       buildPath: "dist/css/",
       files: [
