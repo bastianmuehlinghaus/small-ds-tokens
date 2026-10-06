@@ -131,7 +131,7 @@
       },
       "utility-error": {
         "$type": "color",
-        "$value": "{color.utility.red.800}"
+        "$value": "{color.utility.red.600}"
       },
       "utility-info": {
         "$type": "color",
