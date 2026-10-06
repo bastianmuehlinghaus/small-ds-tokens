@@ -244,19 +244,19 @@
       "Dark": "{color/neutral/400}"
     },
     "color/border/utility-error": {
-      "Light": "{color/utility/red/800}",
+      "Light": "{color/utility/red/600}",
       "Dark": "{color/utility/red/300}"
     },
     "color/border/utility-info": {
-      "Light": "{color/utility/blue/800}",
+      "Light": "{color/utility/blue/600}",
       "Dark": "{color/utility/blue/300}"
     },
     "color/border/utility-success": {
-      "Light": "{color/utility/green/800}",
+      "Light": "{color/utility/green/600}",
       "Dark": "{color/utility/green/300}"
     },
     "color/border/utility-warning": {
-      "Light": "{color/utility/yellow/800}",
+      "Light": "{color/utility/yellow/600}",
       "Dark": "{color/utility/yellow/300}"
     },
     "color/content/default": {
