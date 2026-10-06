@@ -83,7 +83,7 @@ as well as Storybook.
 
 **A rebinding must not change the variable count.** Pointing a Tier 2 token at a
 different Tier 1 primitive adds nothing, so `npm run verify` should still report
-280. If the count moves, a variable was created rather than re-aimed — which is
+278. If the count moves, a variable was created rather than re-aimed — which is
 exactly the thing rule 1 says to ask about first.
 
 ## Commands
@@ -96,6 +96,32 @@ npm run verify   # assert nothing was lost and the alias chain is intact
 Always run `npm run verify` after touching the build. It catches the failure
 that matters: a broken alias chain, which looks fine in light mode and silently
 kills dark mode.
+
+## Composed colours (alpha)
+
+Figma's composed colours (September 2026) let a colour variable be another
+colour **plus an opacity**. Small DS uses them for every translucent colour.
+There are no alpha colour primitives any more:
+
+- Tier 1 has an opacity scale, `opacity/8, 12, 32, 40, 60, 72`. These are FLOAT,
+  scope `COLOR_OPACITY`, and in **percent (0–100)**, which is Figma's unit for
+  colour opacity: a value of 8 means 8%, not 0.08.
+- Tier 2 composes colour and opacity directly, for example `state/hover` =
+  `content/default @ opacity/8`, and `shadow/default` = `neutral/black @ opacity/12`
+  in Light and `@ opacity/40` in Dark.
+
+Through the pipeline:
+
+| Stage | A composed value is… |
+|---|---|
+| Figma API | `{ color: VariableAlias, opacity: number \| VariableAlias }`. The typings bundled with the figma-use skill predate it, so read the current ones from `figma/plugin-typings`. |
+| `figma-dump.json` | `{ "color": "{…}", "opacity": "{opacity/8}" }`, per mode in Tier 2 |
+| `tokens/*.json` (DTCG) | the resolved colour in `$value`, and the composition in `$extensions["com.small-ds"].composed`. DTCG has no "alias with alpha". |
+| CSS | `color-mix(in srgb, var(--sds-…) calc(var(--sds-opacity-8) * 1%), transparent)`, in `:root` and in the dark block |
+| JS / JSON | the resolved `rgba()` |
+
+`npm run verify` asserts every composition keeps its references in both modes.
+A composed colour that flattens to hex fails the build.
 
 ## Units
 
