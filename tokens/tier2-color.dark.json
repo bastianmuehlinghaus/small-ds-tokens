@@ -11,7 +11,7 @@
       },
       "subtle": {
         "$type": "color",
-        "$value": "{color.neutral.800}"
+        "$value": "{color.neutral.850}"
       },
       "sunken": {
         "$type": "color",
