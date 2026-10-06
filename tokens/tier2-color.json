@@ -61,7 +61,7 @@
       },
       "focus": {
         "$type": "color",
-        "$value": "{color.utility.blue.700}"
+        "$value": "{color.utility.blue.600}"
       },
       "disabled": {
         "$type": "color",
