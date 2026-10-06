@@ -515,21 +515,21 @@
       "fontFamily": "{typography/font-family/sans}",
       "fontSize": "{typography/font-size/16}",
       "lineHeight": "{typography/line-height/24}",
-      "letterSpacing": "{typography/letter-spacing/wide}",
+      "letterSpacing": "{typography/letter-spacing/normal}",
       "fontWeight": "{typography/font-weight/regular}"
     },
     "Label/Medium": {
       "fontFamily": "{typography/font-family/sans}",
       "fontSize": "{typography/font-size/14}",
       "lineHeight": "{typography/line-height/20}",
-      "letterSpacing": "{typography/letter-spacing/wide}",
+      "letterSpacing": "{typography/letter-spacing/normal}",
       "fontWeight": "{typography/font-weight/regular}"
     },
     "Label/Small": {
       "fontFamily": "{typography/font-family/sans}",
       "fontSize": "{typography/font-size/12}",
       "lineHeight": "{typography/line-height/16}",
-      "letterSpacing": "{typography/letter-spacing/wide}",
+      "letterSpacing": "{typography/letter-spacing/normal}",
       "fontWeight": "{typography/font-weight/regular}"
     },
     "Body/XSmall": {
