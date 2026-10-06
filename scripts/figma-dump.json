@@ -296,7 +296,7 @@
       "Dark": "{color/neutral/500}"
     },
     "color/content/utility-error": {
-      "Light": "{color/utility/red/800}",
+      "Light": "{color/utility/red/600}",
       "Dark": "{color/utility/red/300}"
     },
     "color/content/utility-info": {
