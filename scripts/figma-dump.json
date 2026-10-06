@@ -3,7 +3,7 @@
     "fileKey": "DABmspHvLwmzYjMrFBjVQW",
     "fileName": "Small DS: Design Tokens",
     "extractedAt": "2026-10-06",
-    "totalVariables": 280,
+    "totalVariables": 281,
     "collections": {
       "Tier 1 / Primitives": {
         "count": 136,
@@ -19,7 +19,7 @@
         ]
       },
       "Tier 2 / Semantics — Layout": {
-        "count": 35,
+        "count": 36,
         "modes": [
           "Value"
         ]
@@ -346,6 +346,7 @@
     "border/width/focus": "{border/width/2}",
     "radius/none": "{border/radius/0}",
     "radius/control": "{border/radius/4}",
+    "radius/control-sm": "{border/radius/2}",
     "radius/surface": "{border/radius/8}",
     "radius/surface-lg": "{border/radius/24}",
     "radius/pill": "{border/radius/full}",
@@ -433,7 +434,7 @@
     "link/underline/thickness/hover": "{underline/thickness/strong}",
     "select/color/content/placeholder": "{color/content/placeholder}",
     "select/color/icon/indicator": "{color/content/subtle}",
-    "selection-control/border/radius/checkbox": "{radius/control}",
+    "selection-control/border/radius/checkbox": "{radius/control-sm}",
     "selection-control/border/radius/radio": "{radius/pill}",
     "selection-control/color/background/checked": "{color/background/knockout}",
     "selection-control/color/background/default": "{color/background/raised}",
