@@ -27,7 +27,15 @@
       },
       "overlay": {
         "$type": "color",
-        "$value": "{color.alpha.black.72}"
+        "$value": "#000000b8",
+        "$extensions": {
+          "com.small-ds": {
+            "composed": {
+              "color": "{color.neutral.black}",
+              "opacity": "{opacity.72}"
+            }
+          }
+        }
       },
       "utility-error": {
         "$type": "color",
@@ -149,34 +157,90 @@
     "shadow": {
       "default": {
         "$type": "color",
-        "$value": "{color.alpha.black.40}"
+        "$value": "#00000066",
+        "$extensions": {
+          "com.small-ds": {
+            "composed": {
+              "color": "{color.neutral.black}",
+              "opacity": "{opacity.40}"
+            }
+          }
+        }
       },
       "subtle": {
         "$type": "color",
-        "$value": "{color.alpha.black.32}"
+        "$value": "#00000052",
+        "$extensions": {
+          "com.small-ds": {
+            "composed": {
+              "color": "{color.neutral.black}",
+              "opacity": "{opacity.32}"
+            }
+          }
+        }
       }
     },
     "state": {
       "hover": {
         "$type": "color",
-        "$value": "{color.alpha.white.8}"
+        "$value": "#fdfdfd14",
+        "$extensions": {
+          "com.small-ds": {
+            "composed": {
+              "color": "{color.content.default}",
+              "opacity": "{opacity.8}"
+            }
+          }
+        }
       },
       "pressed": {
         "$type": "color",
-        "$value": "{color.alpha.white.12}"
+        "$value": "#fdfdfd1f",
+        "$extensions": {
+          "com.small-ds": {
+            "composed": {
+              "color": "{color.content.default}",
+              "opacity": "{opacity.12}"
+            }
+          }
+        }
       },
       "selected": {
         "$type": "color",
-        "$value": "{color.alpha.white.12}"
+        "$value": "#fdfdfd1f",
+        "$extensions": {
+          "com.small-ds": {
+            "composed": {
+              "color": "{color.content.default}",
+              "opacity": "{opacity.12}"
+            }
+          }
+        }
       },
       "knockout": {
         "hover": {
           "$type": "color",
-          "$value": "{color.alpha.black.8}"
+          "$value": "#14141414",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.content.knockout}",
+                "opacity": "{opacity.8}"
+              }
+            }
+          }
         },
         "pressed": {
           "$type": "color",
-          "$value": "{color.alpha.black.12}"
+          "$value": "#1414141f",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.content.knockout}",
+                "opacity": "{opacity.12}"
+              }
+            }
+          }
         }
       }
     }

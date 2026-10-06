@@ -3,10 +3,10 @@
     "fileKey": "DABmspHvLwmzYjMrFBjVQW",
     "fileName": "Small DS: Design Tokens",
     "extractedAt": "2026-10-06",
-    "totalVariables": 281,
+    "totalVariables": 278,
     "collections": {
       "Tier 1 / Primitives": {
-        "count": 136,
+        "count": 133,
         "modes": [
           "Value"
         ]
@@ -45,38 +45,6 @@
     "border/width/0": 0,
     "border/width/1": 1,
     "border/width/2": 2,
-    "color/alpha/black/8": {
-      "color": "{color/neutral/black}",
-      "opacity": 8
-    },
-    "color/alpha/black/12": {
-      "color": "{color/neutral/black}",
-      "opacity": 12
-    },
-    "color/alpha/black/32": {
-      "color": "{color/neutral/black}",
-      "opacity": 32
-    },
-    "color/alpha/black/40": {
-      "color": "{color/neutral/black}",
-      "opacity": 40
-    },
-    "color/alpha/black/60": {
-      "color": "{color/neutral/black}",
-      "opacity": 60
-    },
-    "color/alpha/black/72": {
-      "color": "{color/neutral/black}",
-      "opacity": 72
-    },
-    "color/alpha/white/8": {
-      "color": "{color/neutral/white}",
-      "opacity": 8
-    },
-    "color/alpha/white/12": {
-      "color": "{color/neutral/white}",
-      "opacity": 12
-    },
     "color/neutral/100": "#fdfdfd",
     "color/neutral/200": "#f5f5f5",
     "color/neutral/300": "#e8e8e8",
@@ -138,7 +106,12 @@
     "motion/easing/entrance": "cubic-bezier(0, 0, 0.2, 1)",
     "motion/easing/exit": "cubic-bezier(0.4, 0, 1, 1)",
     "motion/easing/emphasized": "cubic-bezier(0.2, 0, 0, 1)",
-    "opacity/disabled": 0.3,
+    "opacity/12": 12,
+    "opacity/32": 32,
+    "opacity/40": 40,
+    "opacity/60": 60,
+    "opacity/72": 72,
+    "opacity/8": 8,
     "size/control/32": 32,
     "size/control/40": 40,
     "size/control/48": 48,
@@ -220,8 +193,14 @@
       "Dark": "{color/neutral/100}"
     },
     "color/background/overlay": {
-      "Light": "{color/alpha/black/60}",
-      "Dark": "{color/alpha/black/72}"
+      "Light": {
+        "color": "{color/neutral/black}",
+        "opacity": "{opacity/60}"
+      },
+      "Dark": {
+        "color": "{color/neutral/black}",
+        "opacity": "{opacity/72}"
+      }
     },
     "color/background/utility-error": {
       "Light": "{color/utility/red/100}",
@@ -336,32 +315,74 @@
       "Dark": "{color/utility/yellow/300}"
     },
     "color/shadow/default": {
-      "Light": "{color/alpha/black/12}",
-      "Dark": "{color/alpha/black/40}"
+      "Light": {
+        "color": "{color/neutral/black}",
+        "opacity": "{opacity/12}"
+      },
+      "Dark": {
+        "color": "{color/neutral/black}",
+        "opacity": "{opacity/40}"
+      }
     },
     "color/shadow/subtle": {
-      "Light": "{color/alpha/black/8}",
-      "Dark": "{color/alpha/black/32}"
+      "Light": {
+        "color": "{color/neutral/black}",
+        "opacity": "{opacity/8}"
+      },
+      "Dark": {
+        "color": "{color/neutral/black}",
+        "opacity": "{opacity/32}"
+      }
     },
     "color/state/hover": {
-      "Light": "{color/alpha/black/8}",
-      "Dark": "{color/alpha/white/8}"
+      "Light": {
+        "color": "{color/content/default}",
+        "opacity": "{opacity/8}"
+      },
+      "Dark": {
+        "color": "{color/content/default}",
+        "opacity": "{opacity/8}"
+      }
     },
     "color/state/pressed": {
-      "Light": "{color/alpha/black/12}",
-      "Dark": "{color/alpha/white/12}"
+      "Light": {
+        "color": "{color/content/default}",
+        "opacity": "{opacity/12}"
+      },
+      "Dark": {
+        "color": "{color/content/default}",
+        "opacity": "{opacity/12}"
+      }
     },
     "color/state/selected": {
-      "Light": "{color/alpha/black/12}",
-      "Dark": "{color/alpha/white/12}"
+      "Light": {
+        "color": "{color/content/default}",
+        "opacity": "{opacity/12}"
+      },
+      "Dark": {
+        "color": "{color/content/default}",
+        "opacity": "{opacity/12}"
+      }
     },
     "color/state/knockout/hover": {
-      "Light": "{color/alpha/white/8}",
-      "Dark": "{color/alpha/black/8}"
+      "Light": {
+        "color": "{color/content/knockout}",
+        "opacity": "{opacity/8}"
+      },
+      "Dark": {
+        "color": "{color/content/knockout}",
+        "opacity": "{opacity/8}"
+      }
     },
     "color/state/knockout/pressed": {
-      "Light": "{color/alpha/white/12}",
-      "Dark": "{color/alpha/black/12}"
+      "Light": {
+        "color": "{color/content/knockout}",
+        "opacity": "{opacity/12}"
+      },
+      "Dark": {
+        "color": "{color/content/knockout}",
+        "opacity": "{opacity/12}"
+      }
     }
   },
   "tier2layout": {

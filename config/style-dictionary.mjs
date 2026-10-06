@@ -58,15 +58,17 @@ StyleDictionary.registerTransform({
 /* Composed colours (Figma alias + opacity) keep their relationship in CSS: the
    colour stays a reference, so "black at 8%" follows black if it ever moves.
    CSS only — JS and JSON keep the resolved $value. */
+const composedOf = (t) => t.$extensions?.["com.small-ds"]?.composed;
+const composedCss = ({ color, opacity }) => {
+  const pct = typeof opacity === "string" ? `calc(${ref(opacity)} * 1%)` : `${opacity}%`;
+  return `color-mix(in srgb, ${ref(color)} ${pct}, transparent)`;
+};
+
 StyleDictionary.registerTransform({
   name: "sds/color/composed",
   type: "value",
-  filter: (t) => Boolean(t.$extensions?.["com.small-ds"]?.composed),
-  transform: (t) => {
-    const { color, opacity } = t.$extensions["com.small-ds"].composed;
-    const pct = typeof opacity === "string" ? `calc(${ref(opacity)} * 1%)` : `${opacity}%`;
-    return `color-mix(in srgb, ${ref(color)} ${pct}, transparent)`;
-  },
+  filter: (t) => Boolean(composedOf(t)),
+  transform: (t) => composedCss(composedOf(t)),
 });
 
 // fontWeight, number and cubicBezier deliberately have no transform: they stay
@@ -151,10 +153,10 @@ await sd.buildAllPlatforms();
 
 /* Emitted by hand rather than through a second Style Dictionary pass: a `filter`
    narrows `dictionary.allTokens` inside the format, which breaks reference
-   lookup against Tier 1. The dark layer is 42 straight aliases, so resolving
-   them here is both simpler and easier to read. */
+   lookup against Tier 1. The dark layer is 42 aliases or compositions, so
+   resolving them here is both simpler and easier to read. */
 const darkVars = [...leaves(read("tier2-color.dark.json"))].map(
-  ([name, t]) => `--${PREFIX}-${name}: ${ref(t.$value)};`
+  ([name, t]) => `--${PREFIX}-${name}: ${composedOf(t) ? composedCss(composedOf(t)) : ref(t.$value)};`
 );
 
 const darkCss = [

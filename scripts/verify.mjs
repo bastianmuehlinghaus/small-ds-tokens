@@ -32,18 +32,26 @@ check("variable count matches Figma", allFigma.length === dump._meta.totalVariab
 const semanticPaths = [...Object.keys(dump.tier2color), ...Object.keys(dump.tier2layout), ...Object.keys(dump.tier3)];
 const literals = semanticPaths.filter((p) => {
   const m = css.match(new RegExp(`^\\s*${varName(p)}:\\s*([^;]+);`, "m"));
-  return m && !m[1].trim().startsWith("var(");
+  const v = m && m[1].trim();
+  // A composed colour is still a reference: color-mix() over var()s.
+  return m && !(v.startsWith("var(") || (v.startsWith("color-mix(") && v.includes("var(")));
 });
 check(`all ${semanticPaths.length} Tier 2/3 tokens are var() references`, literals.length === 0, literals.slice(0, 5).join(", "));
 
-/* 2b. Composed colours (Figma colour + opacity) stay compositions in CSS. If
-       one flattens to a literal, the "black at 8%" relationship is lost. */
-const composedPaths = Object.entries(dump.tier1).filter(([, v]) => v && typeof v === "object" && "color" in v);
-const flattened = composedPaths.filter(([p, v]) => {
-  const m = css.match(new RegExp(`^\\s*${varName(p)}:\\s*([^;]+);`, "m"));
-  return !m || !m[1].includes(`color-mix(`) || !m[1].includes(`var(${varName(v.color.slice(1, -1))})`);
+/* 2b. Composed colours (Figma colour + opacity) stay compositions in CSS, in
+       both modes. If one flattens to a literal, "black at 8%" is lost. */
+const darkAt = css.indexOf(':root[data-theme="dark"]');
+const declIn = (block, p) => (block.match(new RegExp(`^\\s*${varName(p)}:\\s*([^;]+);`, "m")) || [])[1];
+const composedChecks = [
+  ...Object.entries(dump.tier1).map(([p, v]) => [p, v, css.slice(0, darkAt)]),
+  ...Object.entries(dump.tier2color).flatMap(([p, v]) => [[p, v.Light, css.slice(0, darkAt)], [p, v.Dark, css.slice(darkAt, css.indexOf("@media"))]]),
+].filter(([, v]) => v && typeof v === "object" && "color" in v);
+const refOf = (r) => `var(${varName(r.slice(1, -1))})`;
+const flattened = composedChecks.filter(([p, v, block]) => {
+  const d = declIn(block, p);
+  return !d || !d.includes("color-mix(") || !d.includes(refOf(v.color)) || (typeof v.opacity === "string" && !d.includes(refOf(v.opacity)));
 }).map(([p]) => p);
-check(`all ${composedPaths.length} composed colours reference their base`, composedPaths.length > 0 && flattened.length === 0, flattened.slice(0, 5).join(", "));
+check(`all ${composedChecks.length} composed colours keep their references`, composedChecks.length > 0 && flattened.length === 0, flattened.slice(0, 5).join(", "));
 
 /* 3. Dark mode covers the whole Tier 2 colour layer, and nothing else. */
 const darkBlock = css.slice(css.indexOf(':root[data-theme="dark"]'), css.indexOf("@media"));
