@@ -5,8 +5,8 @@ Design tokens generated from Figma. Published as `@small-ds/tokens`.
 **Figma:** [Small DS: Design Tokens](https://www.figma.com/design/DABmspHvLwmzYjMrFBjVQW/Small-DS--Design-Tokens)
 (`DABmspHvLwmzYjMrFBjVQW`) — the source of truth. Consumed by
 [Small DS: Components](https://www.figma.com/design/VBd0r5d1gcGPQSKrR8LzCp/Small-DS--Components)
-(`VBd0r5d1gcGPQSKrR8LzCp`), where the three coded components exist as Figma
-component sets. A token change here shows up there through the published
+(`VBd0r5d1gcGPQSKrR8LzCp`), where every coded component exists as a Figma
+component set, one page each. A token change here shows up there through the published
 library, the same way it reaches the components repo through npm.
 
 ## Rules
@@ -57,7 +57,8 @@ const target = all.find(v => v.name === "radius/surface");
 // Tier 3 tokens aliasing it
 const aliases = all.filter(v => Object.values(v.valuesByMode).some(
   val => val && val.type === "VARIABLE_ALIAS" && val.id === target.id));
-// plus a walk of figma.currentPage looking for boundVariables hits
+// plus a walk of each page for boundVariables hits. The components file has
+// one page per component, so a single page is not the whole picture.
 ```
 
 **2. Change it in Figma, not in code.** `setValueForMode` with a
