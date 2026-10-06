@@ -183,11 +183,11 @@
     "state": {
       "hover": {
         "$type": "color",
-        "$value": "#00000014",
+        "$value": "#14141414",
         "$extensions": {
           "com.small-ds": {
             "composed": {
-              "color": "{color.neutral.black}",
+              "color": "{color.content.default}",
               "opacity": "{opacity.8}"
             }
           }
@@ -195,11 +195,11 @@
       },
       "pressed": {
         "$type": "color",
-        "$value": "#0000001f",
+        "$value": "#1414141f",
         "$extensions": {
           "com.small-ds": {
             "composed": {
-              "color": "{color.neutral.black}",
+              "color": "{color.content.default}",
               "opacity": "{opacity.12}"
             }
           }
@@ -207,11 +207,11 @@
       },
       "selected": {
         "$type": "color",
-        "$value": "#0000001f",
+        "$value": "#1414141f",
         "$extensions": {
           "com.small-ds": {
             "composed": {
-              "color": "{color.neutral.black}",
+              "color": "{color.content.default}",
               "opacity": "{opacity.12}"
             }
           }
@@ -224,7 +224,7 @@
           "$extensions": {
             "com.small-ds": {
               "composed": {
-                "color": "{color.neutral.white}",
+                "color": "{color.content.knockout}",
                 "opacity": "{opacity.8}"
               }
             }
@@ -236,7 +236,7 @@
           "$extensions": {
             "com.small-ds": {
               "composed": {
-                "color": "{color.neutral.white}",
+                "color": "{color.content.knockout}",
                 "opacity": "{opacity.12}"
               }
             }

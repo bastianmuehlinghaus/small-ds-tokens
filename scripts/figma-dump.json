@@ -336,51 +336,51 @@
     },
     "color/state/hover": {
       "Light": {
-        "color": "{color/neutral/black}",
+        "color": "{color/content/default}",
         "opacity": "{opacity/8}"
       },
       "Dark": {
-        "color": "{color/neutral/white}",
+        "color": "{color/content/default}",
         "opacity": "{opacity/8}"
       }
     },
     "color/state/pressed": {
       "Light": {
-        "color": "{color/neutral/black}",
+        "color": "{color/content/default}",
         "opacity": "{opacity/12}"
       },
       "Dark": {
-        "color": "{color/neutral/white}",
+        "color": "{color/content/default}",
         "opacity": "{opacity/12}"
       }
     },
     "color/state/selected": {
       "Light": {
-        "color": "{color/neutral/black}",
+        "color": "{color/content/default}",
         "opacity": "{opacity/12}"
       },
       "Dark": {
-        "color": "{color/neutral/white}",
+        "color": "{color/content/default}",
         "opacity": "{opacity/12}"
       }
     },
     "color/state/knockout/hover": {
       "Light": {
-        "color": "{color/neutral/white}",
+        "color": "{color/content/knockout}",
         "opacity": "{opacity/8}"
       },
       "Dark": {
-        "color": "{color/neutral/black}",
+        "color": "{color/content/knockout}",
         "opacity": "{opacity/8}"
       }
     },
     "color/state/knockout/pressed": {
       "Light": {
-        "color": "{color/neutral/white}",
+        "color": "{color/content/knockout}",
         "opacity": "{opacity/12}"
       },
       "Dark": {
-        "color": "{color/neutral/black}",
+        "color": "{color/content/knockout}",
         "opacity": "{opacity/12}"
       }
     }
