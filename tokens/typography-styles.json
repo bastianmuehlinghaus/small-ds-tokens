@@ -120,13 +120,13 @@
         "fontWeight": "{typography.font-weight.regular}"
       }
     },
-    "caption": {
+    "body-xsmall": {
       "$type": "typography",
       "$value": {
-        "fontFamily": "{typography.font-family.sans}",
-        "fontSize": "{typography.font-size.14}",
-        "lineHeight": "{typography.line-height.20}",
         "letterSpacing": "{typography.letter-spacing.normal}",
+        "fontSize": "{typography.font-size.14}",
+        "fontFamily": "{typography.font-family.sans}",
+        "lineHeight": "{typography.line-height.20}",
         "fontWeight": "{typography.font-weight.regular}"
       }
     }
