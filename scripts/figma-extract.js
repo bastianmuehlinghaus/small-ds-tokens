@@ -19,6 +19,9 @@ const ser = (val) => {
   if (val && typeof val === "object") {
     if (val.type === "VARIABLE_ALIAS") return "{" + (idToName.get(val.id) || val.id) + "}";
     if ("r" in val) return toHex(val);
+    // A composed colour (Figma, September 2026): a colour plus an opacity, either
+    // of which may be an alias. Opacity is a percentage, 0–100, not 0–1.
+    if ("color" in val && "opacity" in val) return { color: ser(val.color), opacity: ser(val.opacity) };
   }
   return val;
 };
