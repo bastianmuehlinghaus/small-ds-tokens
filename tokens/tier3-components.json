@@ -312,7 +312,7 @@
       "radius": {
         "checkbox": {
           "$type": "dimension",
-          "$value": "{radius.control}"
+          "$value": "{radius.control-sm}"
         },
         "radio": {
           "$type": "dimension",

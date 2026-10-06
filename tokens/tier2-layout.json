@@ -24,6 +24,10 @@
       "$type": "dimension",
       "$value": "{border.radius.4}"
     },
+    "control-sm": {
+      "$type": "dimension",
+      "$value": "{border.radius.2}"
+    },
     "surface": {
       "$type": "dimension",
       "$value": "{border.radius.8}"

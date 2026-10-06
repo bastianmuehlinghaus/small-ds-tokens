@@ -77,19 +77,19 @@
       },
       "utility-error": {
         "$type": "color",
-        "$value": "{color.utility.red.800}"
+        "$value": "{color.utility.red.600}"
       },
       "utility-info": {
         "$type": "color",
-        "$value": "{color.utility.blue.800}"
+        "$value": "{color.utility.blue.600}"
       },
       "utility-success": {
         "$type": "color",
-        "$value": "{color.utility.green.800}"
+        "$value": "{color.utility.green.600}"
       },
       "utility-warning": {
         "$type": "color",
-        "$value": "{color.utility.yellow.800}"
+        "$value": "{color.utility.yellow.600}"
       }
     },
     "content": {
