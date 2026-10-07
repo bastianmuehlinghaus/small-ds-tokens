@@ -31,6 +31,9 @@ README for why.
 - **The Figma plan is Pro, not Enterprise, so the Variables REST API is
   unavailable.** `GET /v1/files/:key/variables/local` returns 403. Extraction
   goes through the Figma MCP `use_figma` bridge — see `scripts/figma-extract.js`.
+  Figma Console MCP's `figma_execute` runs the same Plugin API against Figma
+  Desktop and is connected to this file too (run the Desktop Bridge plugin
+  here); it is the route that can see Söhne. Not yet tried for extraction.
 - **Tier 1 is not published to the Figma library**, so `search_design_system`
   cannot see it and will return empty for `neutral`, `spacing`, `motion` and
   friends. That is not a bug — it is what makes rule 3 enforceable at the library
