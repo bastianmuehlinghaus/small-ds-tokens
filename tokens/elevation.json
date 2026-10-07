@@ -1,9 +1,5 @@
 {
   "shadow": {
-    "none": {
-      "$type": "shadow",
-      "$value": []
-    },
     "raised": {
       "$type": "shadow",
       "$value": [
