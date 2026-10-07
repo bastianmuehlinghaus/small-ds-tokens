@@ -381,6 +381,12 @@
         "$type": "dimension",
         "$value": 32
       }
+    },
+    "overlay": {
+      "240": {
+        "$type": "dimension",
+        "$value": 240
+      }
     }
   },
   "spacing": {

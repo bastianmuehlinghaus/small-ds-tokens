@@ -2,7 +2,7 @@
 
 Design tokens for **Small DS**, generated from the
 [Figma token library](https://www.figma.com/design/DABmspHvLwmzYjMrFBjVQW/Small-DS--Design-Tokens).
-280 variables across four tiers, in Light and Dark modes.
+282 variables across four tiers, in Light and Dark modes.
 
 ## Install
 
