@@ -368,10 +368,6 @@
       "24": {
         "$type": "dimension",
         "$value": 24
-      },
-      "32": {
-        "$type": "dimension",
-        "$value": 32
       }
     },
     "overlay": {
