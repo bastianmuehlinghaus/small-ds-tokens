@@ -177,6 +177,14 @@
       }
     }
   },
+  "chip": {
+    "size": {
+      "height": {
+        "$type": "dimension",
+        "$value": "{size.icon.md}"
+      }
+    }
+  },
   "input": {
     "border": {
       "radius": {

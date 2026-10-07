@@ -73,6 +73,10 @@
   },
   "space": {
     "inline": {
+      "xxs": {
+        "$type": "dimension",
+        "$value": "{spacing.2}"
+      },
       "xs": {
         "$type": "dimension",
         "$value": "{spacing.4}"
