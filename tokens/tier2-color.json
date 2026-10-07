@@ -111,7 +111,7 @@
       },
       "placeholder": {
         "$type": "color",
-        "$value": "{color.neutral.700}"
+        "$value": "{color.neutral.600}"
       },
       "disabled": {
         "$type": "color",

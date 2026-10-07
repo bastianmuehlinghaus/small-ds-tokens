@@ -2,7 +2,7 @@
   "_meta": {
     "fileKey": "DABmspHvLwmzYjMrFBjVQW",
     "fileName": "Small DS: Design Tokens",
-    "extractedAt": "2026-10-06",
+    "extractedAt": "2026-10-07",
     "totalVariables": 278,
     "collections": {
       "Tier 1 / Primitives": {
@@ -271,7 +271,7 @@
       "Dark": "{color/neutral/500}"
     },
     "color/content/placeholder": {
-      "Light": "{color/neutral/700}",
+      "Light": "{color/neutral/600}",
       "Dark": "{color/neutral/500}"
     },
     "color/content/disabled": {
