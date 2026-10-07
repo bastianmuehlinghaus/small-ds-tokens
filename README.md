@@ -2,7 +2,7 @@
 
 Design tokens for **Small DS**, generated from the
 [Figma token library](https://www.figma.com/design/DABmspHvLwmzYjMrFBjVQW/Small-DS--Design-Tokens).
-282 variables across four tiers, in Light and Dark modes.
+271 variables across four tiers, in Light and Dark modes.
 
 ## Install
 
@@ -30,7 +30,7 @@ Typed values are available too, when you need a token in JS rather than CSS:
 
 ```js
 import tokens from "@small-ds/tokens";
-tokens["sds-size-control-md"]; // "40px"
+tokens["sds-size-control-default"]; // "32px"
 ```
 
 ## Theming

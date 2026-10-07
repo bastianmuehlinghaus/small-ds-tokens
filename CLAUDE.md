@@ -86,8 +86,8 @@ as well as Storybook.
 
 **A rebinding must not change the variable count.** Pointing a Tier 2 token at a
 different Tier 1 primitive adds nothing, so `npm run verify` should report the
-same count as before (282 as of `size/overlay/min-width`, the last variable added, with
-Bastian's approval). If the count moves, a variable was created rather than
+same count as before (271 since the move to one control size, 32px, which removed
+eleven, with Bastian's approval). If the count moves, a variable was created rather than
 re-aimed — which is exactly the thing rule 1 says to ask about first.
 
 ## Commands
