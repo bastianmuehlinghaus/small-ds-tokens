@@ -586,7 +586,6 @@
     }
   },
   "effectStyles": {
-    "shadow/none": [],
     "shadow/raised": [
       {
         "offsetX": 0,
