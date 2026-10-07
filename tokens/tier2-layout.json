@@ -69,6 +69,12 @@
         "$type": "dimension",
         "$value": "{size.icon.24}"
       }
+    },
+    "overlay": {
+      "min-width": {
+        "$type": "dimension",
+        "$value": "{size.overlay.240}"
+      }
     }
   },
   "space": {
