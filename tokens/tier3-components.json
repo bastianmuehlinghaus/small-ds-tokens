@@ -16,24 +16,12 @@
     },
     "size": {
       "height": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "{size.control.sm}"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "{size.control.md}"
-        }
+        "$type": "dimension",
+        "$value": "{size.control.default}"
       },
       "icon": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "{size.icon.sm}"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "{size.icon.md}"
-        }
+        "$type": "dimension",
+        "$value": "{size.icon.sm}"
       }
     },
     "space": {
@@ -42,14 +30,8 @@
         "$value": "{space.inset.xs}"
       },
       "inset-x": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "{space.inset.sm}"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "{space.inset.md}"
-        }
+        "$type": "dimension",
+        "$value": "{space.inset.sm}"
       }
     },
     "default": {
@@ -244,18 +226,8 @@
     },
     "size": {
       "height": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "{size.control.sm}"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "{size.control.md}"
-        },
-        "lg": {
-          "$type": "dimension",
-          "$value": "{size.control.lg}"
-        }
+        "$type": "dimension",
+        "$value": "{size.control.default}"
       }
     },
     "space": {
@@ -366,16 +338,6 @@
           "$type": "color",
           "$value": "{color.content.knockout}"
         }
-      }
-    },
-    "size": {
-      "sm": {
-        "$type": "dimension",
-        "$value": "{size.control.sm}"
-      },
-      "md": {
-        "$type": "dimension",
-        "$value": "{size.control.md}"
       }
     }
   }

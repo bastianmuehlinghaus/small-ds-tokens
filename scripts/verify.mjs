@@ -66,7 +66,7 @@ check("prefers-color-scheme fallback present", css.includes("@media (prefers-col
 const unit = (p) => (css.match(new RegExp(`^\\s*${varName(p)}:\\s*([^;]+);`, "m")) || [])[1]?.trim();
 const remOk = ["typography/font-size/16", "typography/line-height/24", "typography/letter-spacing/wide"]
   .every((p) => unit(p)?.endsWith("rem"));
-const pxOk = ["spacing/16", "size/control/40", "border/radius/12"].every((p) => unit(p)?.endsWith("px"));
+const pxOk = ["spacing/16", "size/control/32", "border/radius/12"].every((p) => unit(p)?.endsWith("px"));
 check("typography emits rem", remOk, `font-size/16 = ${unit("typography/font-size/16")}`);
 check("layout emits px", pxOk, `spacing/16 = ${unit("spacing/16")}`);
 check("font-weight stays unitless", unit("typography/font-weight/semibold") === "600");

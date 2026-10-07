@@ -43,17 +43,9 @@
   },
   "size": {
     "control": {
-      "sm": {
+      "default": {
         "$type": "dimension",
         "$value": "{size.control.32}"
-      },
-      "md": {
-        "$type": "dimension",
-        "$value": "{size.control.40}"
-      },
-      "lg": {
-        "$type": "dimension",
-        "$value": "{size.control.48}"
       }
     },
     "icon": {

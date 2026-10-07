@@ -354,14 +354,6 @@
       "32": {
         "$type": "dimension",
         "$value": 32
-      },
-      "40": {
-        "$type": "dimension",
-        "$value": 40
-      },
-      "48": {
-        "$type": "dimension",
-        "$value": 48
       }
     },
     "icon": {
@@ -376,10 +368,6 @@
       "24": {
         "$type": "dimension",
         "$value": 24
-      },
-      "32": {
-        "$type": "dimension",
-        "$value": 32
       }
     },
     "overlay": {
