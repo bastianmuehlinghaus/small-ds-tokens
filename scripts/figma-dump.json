@@ -3,7 +3,7 @@
     "fileKey": "DABmspHvLwmzYjMrFBjVQW",
     "fileName": "Small DS: Design Tokens",
     "extractedAt": "2026-10-07",
-    "totalVariables": 279,
+    "totalVariables": 280,
     "collections": {
       "Tier 1 / Primitives": {
         "count": 133,
@@ -19,7 +19,7 @@
         ]
       },
       "Tier 2 / Semantics — Layout": {
-        "count": 36,
+        "count": 37,
         "modes": [
           "Value"
         ]
@@ -401,6 +401,7 @@
     "size/icon/sm": "{size/icon/16}",
     "size/icon/md": "{size/icon/20}",
     "size/icon/lg": "{size/icon/24}",
+    "space/inline/xxs": "{spacing/2}",
     "space/inline/xs": "{spacing/4}",
     "space/inline/sm": "{spacing/8}",
     "space/inline/md": "{spacing/12}",
