@@ -324,6 +324,10 @@
     }
   },
   "opacity": {
+    "4": {
+      "$type": "number",
+      "$value": 4
+    },
     "8": {
       "$type": "number",
       "$value": 8

@@ -242,6 +242,20 @@
             }
           }
         }
+      },
+      "subtle": {
+        "hover": {
+          "$type": "color",
+          "$value": "#1414140a",
+          "$extensions": {
+            "com.small-ds": {
+              "composed": {
+                "color": "{color.content.default}",
+                "opacity": "{opacity.4}"
+              }
+            }
+          }
+        }
       }
     }
   }
