@@ -126,10 +126,6 @@
           "default": {
             "$type": "color",
             "$value": "{color.border.knockout}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{color.border.disabled}"
           }
         },
         "content": {
