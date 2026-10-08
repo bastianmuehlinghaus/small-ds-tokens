@@ -92,11 +92,12 @@ as well as Storybook.
 
 **A rebinding must not change the variable count.** Pointing a Tier 2 token at a
 different Tier 1 primitive adds nothing, so `npm run verify` should report the
-same count as before (271: twelve went with the move to one control size, 32px,
+same count as before (273: twelve went with the move to one control size, 32px,
 and `button/secondary/color/border/disabled` with #41; `size/overlay/480` and
-`size/overlay/max-width` came with the menu and listbox maximum width; all with
-Bastian's approval). If the count moves, a variable was created rather than
-re-aimed — which is exactly the thing rule 1 says to ask about first.
+`size/overlay/max-width` came with the menu and listbox maximum width;
+`opacity/4` and `color/state/subtle/hover` with the lighter field hover, #44;
+all with Bastian's approval). If the count moves, a variable was created rather
+than re-aimed — which is exactly the thing rule 1 says to ask about first.
 
 ## Commands
 
@@ -115,12 +116,13 @@ Figma's composed colours (September 2026) let a colour variable be another
 colour **plus an opacity**. Small DS uses them for every translucent colour.
 There are no alpha colour primitives any more:
 
-- Tier 1 has an opacity scale, `opacity/8, 12, 32, 40, 60, 72`. These are FLOAT,
+- Tier 1 has an opacity scale, `opacity/4, 8, 12, 32, 40, 60, 72`. These are FLOAT,
   scope `COLOR_OPACITY`, and in **percent (0–100)**, which is Figma's unit for
   colour opacity: a value of 8 means 8%, not 0.08.
 - Tier 2 composes colour and opacity directly, for example `state/hover` =
   `content/default @ opacity/8`, and `shadow/default` = `neutral/black @ opacity/12`
-  in Light and `@ opacity/40` in Dark.
+  in Light and `@ opacity/40` in Dark. Fields hover at `state/subtle/hover`
+  (`@ opacity/4`) instead: on 8% a chip in a Select all but disappears.
 
 Through the pipeline:
 

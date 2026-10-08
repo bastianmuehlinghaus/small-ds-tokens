@@ -216,7 +216,7 @@
       "overlay": {
         "hover": {
           "$type": "color",
-          "$value": "{color.state.hover}"
+          "$value": "{color.state.subtle.hover}"
         }
       }
     },

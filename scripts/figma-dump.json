@@ -3,16 +3,16 @@
     "fileKey": "DABmspHvLwmzYjMrFBjVQW",
     "fileName": "Small DS: Design Tokens",
     "extractedAt": "2026-10-08",
-    "totalVariables": 271,
+    "totalVariables": 273,
     "collections": {
       "Tier 1 / Primitives": {
-        "count": 132,
+        "count": 133,
         "modes": [
           "Value"
         ]
       },
       "Tier 2 / Semantics — Color": {
-        "count": 42,
+        "count": 43,
         "modes": [
           "Light",
           "Dark"
@@ -108,6 +108,7 @@
     "motion/easing/emphasized": "cubic-bezier(0.2, 0, 0, 1)",
     "opacity/12": 12,
     "opacity/32": 32,
+    "opacity/4": 4,
     "opacity/40": 40,
     "opacity/60": 60,
     "opacity/72": 72,
@@ -382,6 +383,16 @@
         "color": "{color/content/knockout}",
         "opacity": "{opacity/12}"
       }
+    },
+    "color/state/subtle/hover": {
+      "Light": {
+        "color": "{color/content/default}",
+        "opacity": "{opacity/4}"
+      },
+      "Dark": {
+        "color": "{color/content/default}",
+        "opacity": "{opacity/4}"
+      }
     }
   },
   "tier2layout": {
@@ -463,7 +474,7 @@
     "input/color/content/default": "{color/content/default}",
     "input/color/content/disabled": "{color/content/disabled}",
     "input/color/content/placeholder": "{color/content/placeholder}",
-    "input/color/overlay/hover": "{color/state/hover}",
+    "input/color/overlay/hover": "{color/state/subtle/hover}",
     "input/size/height": "{size/control/default}",
     "input/space/inset-x": "{space/inset/md}",
     "link/color/content/default": "{color/content/link}",
