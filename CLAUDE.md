@@ -33,7 +33,13 @@ README for why.
   goes through the Figma MCP `use_figma` bridge — see `scripts/figma-extract.js`.
   Figma Console MCP's `figma_execute` runs the same Plugin API against Figma
   Desktop and is connected to this file too (run the Desktop Bridge plugin
-  here); it is the route that can see Söhne. Not yet tried for extraction.
+  here); it is the route that can see Söhne. It reads the same values, with
+  two differences that are not changes: numbers come back at Figma's single
+  precision (`-0.30000001192092896` for the dump's `-0.3`), and text styles and
+  their fields come back in a different order. Its output is returned to the
+  conversation rather than written to disk, so for a small change, apply the
+  edit to the dump by hand and confirm it against Figma key by key, rather
+  than pasting the whole dump back (done this way for #41).
 - **Tier 1 is not published to the Figma library**, so `search_design_system`
   cannot see it and will return empty for `neutral`, `spacing`, `motion` and
   friends. That is not a bug — it is what makes rule 3 enforceable at the library
@@ -86,8 +92,9 @@ as well as Storybook.
 
 **A rebinding must not change the variable count.** Pointing a Tier 2 token at a
 different Tier 1 primitive adds nothing, so `npm run verify` should report the
-same count as before (270 since the move to one control size, 32px, which removed
-twelve, with Bastian's approval). If the count moves, a variable was created rather than
+same count as before (269: twelve went with the move to one control size, 32px,
+and `button/secondary/color/border/disabled` with #41, both with Bastian's
+approval). If the count moves, a variable was created rather than
 re-aimed — which is exactly the thing rule 1 says to ask about first.
 
 ## Commands
