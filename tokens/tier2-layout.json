@@ -66,6 +66,10 @@
       "min-width": {
         "$type": "dimension",
         "$value": "{size.overlay.240}"
+      },
+      "max-width": {
+        "$type": "dimension",
+        "$value": "{size.overlay.480}"
       }
     }
   },

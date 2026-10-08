@@ -374,6 +374,10 @@
       "240": {
         "$type": "dimension",
         "$value": 240
+      },
+      "480": {
+        "$type": "dimension",
+        "$value": 480
       }
     }
   },
