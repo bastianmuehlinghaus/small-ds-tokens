@@ -303,15 +303,15 @@
       "Dark": "{color/utility/red/300}"
     },
     "color/content/utility-info": {
-      "Light": "{color/utility/blue/800}",
+      "Light": "{color/utility/blue/600}",
       "Dark": "{color/utility/blue/300}"
     },
     "color/content/utility-success": {
-      "Light": "{color/utility/green/800}",
+      "Light": "{color/utility/green/600}",
       "Dark": "{color/utility/green/300}"
     },
     "color/content/utility-warning": {
-      "Light": "{color/utility/yellow/800}",
+      "Light": "{color/utility/yellow/600}",
       "Dark": "{color/utility/yellow/300}"
     },
     "color/shadow/default": {
