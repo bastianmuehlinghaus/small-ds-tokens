@@ -383,6 +383,12 @@
         "$type": "dimension",
         "$value": 480
       }
+    },
+    "text": {
+      "480": {
+        "$type": "dimension",
+        "$value": 480
+      }
     }
   },
   "spacing": {

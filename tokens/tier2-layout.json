@@ -71,6 +71,12 @@
         "$type": "dimension",
         "$value": "{size.overlay.480}"
       }
+    },
+    "text": {
+      "max-width": {
+        "$type": "dimension",
+        "$value": "{size.text.480}"
+      }
     }
   },
   "space": {

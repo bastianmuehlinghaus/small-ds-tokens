@@ -92,10 +92,12 @@ as well as Storybook.
 
 **A rebinding must not change the variable count.** Pointing a Tier 2 token at a
 different Tier 1 primitive adds nothing, so `npm run verify` should report the
-same count as before (273: twelve went with the move to one control size, 32px,
+same count as before (275: twelve went with the move to one control size, 32px,
 and `button/secondary/color/border/disabled` with #41; `size/overlay/480` and
 `size/overlay/max-width` came with the menu and listbox maximum width;
 `opacity/4` and `color/state/subtle/hover` with the lighter field hover, #44;
+`size/text/480` and `size/text/max-width` with the text measure, a cap on
+running text of about 77 characters at Body/XSmall;
 all with Bastian's approval). If the count moves, a variable was created rather
 than re-aimed — which is exactly the thing rule 1 says to ask about first.
 
