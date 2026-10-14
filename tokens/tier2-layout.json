@@ -46,6 +46,10 @@
       "default": {
         "$type": "dimension",
         "$value": "{size.control.32}"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{size.control.24}"
       }
     },
     "icon": {
