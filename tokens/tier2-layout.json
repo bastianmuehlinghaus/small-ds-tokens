@@ -79,6 +79,12 @@
         "$type": "dimension",
         "$value": "{size.480}"
       }
+    },
+    "target": {
+      "min": {
+        "$type": "dimension",
+        "$value": "{size.24}"
+      }
     }
   },
   "space": {
