@@ -354,43 +354,29 @@
     }
   },
   "size": {
-    "control": {
-      "20": {
-        "$type": "dimension",
-        "$value": 20
-      },
-      "24": {
-        "$type": "dimension",
-        "$value": 24
-      },
-      "32": {
-        "$type": "dimension",
-        "$value": 32
-      }
+    "16": {
+      "$type": "dimension",
+      "$value": 16
     },
-    "icon": {
-      "16": {
-        "$type": "dimension",
-        "$value": 16
-      },
-      "20": {
-        "$type": "dimension",
-        "$value": 20
-      },
-      "24": {
-        "$type": "dimension",
-        "$value": 24
-      }
+    "20": {
+      "$type": "dimension",
+      "$value": 20
     },
-    "overlay": {
-      "240": {
-        "$type": "dimension",
-        "$value": 240
-      },
-      "480": {
-        "$type": "dimension",
-        "$value": 480
-      }
+    "24": {
+      "$type": "dimension",
+      "$value": 24
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": 32
+    },
+    "240": {
+      "$type": "dimension",
+      "$value": 240
+    },
+    "480": {
+      "$type": "dimension",
+      "$value": 480
     }
   },
   "spacing": {

@@ -45,39 +45,45 @@
     "control": {
       "default": {
         "$type": "dimension",
-        "$value": "{size.control.32}"
+        "$value": "{size.32}"
       },
       "sm": {
         "$type": "dimension",
-        "$value": "{size.control.24}"
+        "$value": "{size.24}"
       },
       "xs": {
         "$type": "dimension",
-        "$value": "{size.control.20}"
+        "$value": "{size.20}"
       }
     },
     "icon": {
       "sm": {
         "$type": "dimension",
-        "$value": "{size.icon.16}"
+        "$value": "{size.16}"
       },
       "md": {
         "$type": "dimension",
-        "$value": "{size.icon.20}"
+        "$value": "{size.20}"
       },
       "lg": {
         "$type": "dimension",
-        "$value": "{size.icon.24}"
+        "$value": "{size.24}"
       }
     },
     "overlay": {
       "min-width": {
         "$type": "dimension",
-        "$value": "{size.overlay.240}"
+        "$value": "{size.240}"
       },
       "max-width": {
         "$type": "dimension",
-        "$value": "{size.overlay.480}"
+        "$value": "{size.480}"
+      }
+    },
+    "target": {
+      "min": {
+        "$type": "dimension",
+        "$value": "{size.24}"
       }
     }
   },
