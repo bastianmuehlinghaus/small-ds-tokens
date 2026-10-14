@@ -50,6 +50,10 @@
       "sm": {
         "$type": "dimension",
         "$value": "{size.control.24}"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$value": "{size.control.20}"
       }
     },
     "icon": {

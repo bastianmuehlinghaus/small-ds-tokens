@@ -3,10 +3,10 @@
     "fileKey": "DABmspHvLwmzYjMrFBjVQW",
     "fileName": "Small DS: Design Tokens",
     "extractedAt": "2026-10-08",
-    "totalVariables": 275,
+    "totalVariables": 277,
     "collections": {
       "Tier 1 / Primitives": {
-        "count": 134,
+        "count": 135,
         "modes": [
           "Value"
         ]
@@ -19,7 +19,7 @@
         ]
       },
       "Tier 2 / Semantics — Layout": {
-        "count": 38,
+        "count": 39,
         "modes": [
           "Value"
         ]
@@ -113,6 +113,7 @@
     "opacity/60": 60,
     "opacity/72": 72,
     "opacity/8": 8,
+    "size/control/20": 20,
     "size/control/24": 24,
     "size/control/32": 32,
     "size/icon/16": 16,
@@ -408,6 +409,7 @@
     "radius/pill": "{border/radius/full}",
     "size/control/default": "{size/control/32}",
     "size/control/sm": "{size/control/24}",
+    "size/control/xs": "{size/control/20}",
     "size/icon/sm": "{size/icon/16}",
     "size/icon/md": "{size/icon/20}",
     "size/icon/lg": "{size/icon/24}",
@@ -465,7 +467,7 @@
     "button/secondary/color/content/disabled": "{color/content/disabled}",
     "button/secondary/color/overlay/hover": "{color/state/hover}",
     "button/secondary/color/overlay/pressed": "{color/state/pressed}",
-    "chip/size/height": "{size/icon/md}",
+    "chip/size/height": "{size/control/xs}",
     "input/border/radius": "{radius/control}",
     "input/color/background/default": "{color/background/raised}",
     "input/color/background/disabled": "{color/background/disabled}",
