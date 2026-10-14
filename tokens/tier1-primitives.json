@@ -355,6 +355,10 @@
   },
   "size": {
     "control": {
+      "20": {
+        "$type": "dimension",
+        "$value": 20
+      },
       "24": {
         "$type": "dimension",
         "$value": 24
