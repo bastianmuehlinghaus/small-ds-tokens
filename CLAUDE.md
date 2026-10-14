@@ -52,6 +52,31 @@ README for why.
   deeper (`button/primary/color/background/default`), so a `^color/` test
   mistypes every component colour token.
 
+## Naming
+
+Rules the names already follow (#61). Check a new name against them before
+asking Bastian about it.
+
+- **`<component>/size/<x>`: `<x>` names what is sized**, and `height` means the
+  component's box. `button/size/icon` is the size of Button's icon, not a
+  property called icon. Size stays second, like `color` in
+  `button/primary/color/…`, so a component's sizes share one folder in Figma.
+  Material orders it the other way (`filled-button.icon.size`); keep ours.
+- **A component gets its own token only where Figma defines one**, and only
+  where its value could reasonably differ from the shared one. Menu and
+  navigation rows read `size/control/default` directly, and should: they follow
+  the one control size wherever it goes. `button/size/height` passes the same 32
+  through today, and exists so that Button can diverge.
+- **T-shirt steps are relative within their group.** `size/control/sm` (24) and
+  `size/icon/sm` (16) are different sizes on purpose. `size/control` keeps
+  `default` rather than `md`, because there is one control size and `md` would
+  imply the others.
+- **`input/*` becomes `field/*` with the third field type.** Input and Select
+  share every `input/*` token because they draw the same box. Carbon calls this
+  `field`. Rename when a Textarea, Combobox or similar arrives (Nathan Curtis:
+  promote a token at three components), not before, and not to `control`:
+  `size/control/*` already means every control, buttons included.
+
 ## Changing a token
 
 The README covers extraction. Writing a change *back* to Figma is the other
