@@ -96,7 +96,8 @@ same count as before (273: twelve went with the move to one control size, 32px,
 and `button/secondary/color/border/disabled` with #41; `size/overlay/480` and
 `size/overlay/max-width` came with the menu and listbox maximum width;
 `opacity/4` and `color/state/subtle/hover` with the lighter field hover, #44;
-all with Bastian's approval). If the count moves, a variable was created rather
+`space/inset/xxs` replaced `space/inline/xxs` for the 2px paddings, #52 and
+#54; all with Bastian's approval). If the count moves, a variable was created rather
 than re-aimed — which is exactly the thing rule 1 says to ask about first.
 
 ## Commands
