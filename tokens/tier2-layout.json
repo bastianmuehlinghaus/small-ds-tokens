@@ -85,6 +85,12 @@
         "$type": "dimension",
         "$value": "{size.24}"
       }
+    },
+    "sidebar": {
+      "width": {
+        "$type": "dimension",
+        "$value": "{size.240}"
+      }
     }
   },
   "space": {
