@@ -136,6 +136,10 @@
       "xl": {
         "$type": "dimension",
         "$value": "{spacing.24}"
+      },
+      "xxl": {
+        "$type": "dimension",
+        "$value": "{spacing.32}"
       }
     },
     "stack": {
