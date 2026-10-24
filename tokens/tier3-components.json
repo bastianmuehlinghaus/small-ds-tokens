@@ -153,6 +153,34 @@
           }
         }
       }
+    },
+    "subtle": {
+      "color": {
+        "content": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.content.default}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.content.default}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.content.disabled}"
+          }
+        },
+        "overlay": {
+          "hover": {
+            "$type": "color",
+            "$value": "{color.state.hover}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{color.state.pressed}"
+          }
+        }
+      }
     }
   },
   "chip": {
