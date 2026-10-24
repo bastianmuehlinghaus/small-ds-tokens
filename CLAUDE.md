@@ -117,7 +117,7 @@ as well as Storybook.
 
 **A rebinding must not change the variable count.** Pointing a Tier 2 token at a
 different Tier 1 primitive adds nothing, so `npm run verify` should report the
-same count as before (278: twelve went with the move to one control size, 32px,
+same count as before (283: twelve went with the move to one control size, 32px,
 and `button/secondary/color/border/disabled` with #41; `size/overlay/480` and
 `size/overlay/max-width` came with the menu and listbox maximum width;
 `opacity/4` and `color/state/subtle/hover` with the lighter field hover, #44;
@@ -128,6 +128,8 @@ the size primitives moved to one scale, `size/16, 20, 24, 32, 240, 480`, and
 the duplicate 20 and 24 went, #59; `size/target/min` for the minimum hit
 area, #60; `size/sidebar/width` for the Sidebar, aliasing `size/240`, #64;
 `space/inset/xxl`, aliasing `spacing/32`, for the Sidebar's nested items;
+`button/subtle/color/*` (five: content default, hover and disabled, overlay
+hover and pressed, and no background) for the borderless Button;
 all with Bastian's approval). If the count moves, a variable was created rather
 than re-aimed — which is exactly the thing rule 1 says to ask about first.
 
